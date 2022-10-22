@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    min-width: 400px;
+    font-size: 18px;
+}
+
+#bienvenue{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    padding-top: 20px;
+}
+
+section header div span{
+    font-size: 2rem;
+    padding-left: 20px;
+}
+
+section header div nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+section header div nav ul li{
+    padding: 0 20px;
+    font-weight: 100;
+}
+
+body section a{
+    text-decoration: none;
+    color: white;
+}
+
+body section a:hover{
+    font-weight: bold;
+}
+
+#flex-presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gauche-presentation {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+}
+.gauche-presentation h1 {
+    font-size: 3em;
+    margin: 0;
+    align-items: center;
+}
+
+.droite-presentation {
+    width: 50%;
+    text-align: center;
+}
+.droite-presentation img {
+    width: 70%;
+}
+
+.texte-presentation {
+    text-align: center;
+}
+
+.milieu-presentation{
+    text-align: center;
+    padding: 30px;
+}
+
+#creations{
+    padding: 0 20px;
+}
+
+#projet-grille{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+    grid-gap: 15px;
+}
+
+#project{
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-shadow: 0 0 15px black;
+}
+
+#project:hover{
+    opacity: 0.7;
+}
+
+.project1{
+    background: url(/assets/jump-start.png);
+}
+
+.project2{
+    background: url(/assets/rodeo-pump.jpg);
+}
+
+.project3{
+    background: url(/assets/pac-man.jpg);
+}
+
+.project4{
+    background: url(/assets/mega-pop.jpg);
+}
+
+#contact{
+    text-align: center;
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 2px solid black;
+}
+
+#project-presentation{
+    background: url(/assets/points.png), center url(/assets/jump-start.png);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+@media all and (max-width: 1130px) {
+    #flex-presentation, .texte-presentation {
+        padding: 15px;
+    }
+    #projet-grille {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+    #flex-presentation{
+        flex-direction: column-reverse;
+    }
+}
